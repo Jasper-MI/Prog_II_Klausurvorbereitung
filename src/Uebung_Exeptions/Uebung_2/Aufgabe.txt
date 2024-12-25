@@ -1,0 +1,24 @@
+Aufgabe: Produktbestellungsvalidierung mit benutzerdefinierten Exceptions
+Sie entwickeln eine Anwendung zur Bearbeitung von Produktbestellungen. Die Anwendung soll die Produkt-ID,
+die Bestellmenge und den Einzelpreis eines Produkts einlesen. Es gibt Validierungsregeln, die sicherstellen sollen,
+dass die eingegebenen Daten korrekt sind:
+● Produkt-ID: Muss eine positive, ganze Zahl sein.
+● Bestellmenge: Muss eine positive, ganze Zahl sein.
+● Einzelpreis: Muss ein positiver Dezimalwert sein.
+Schreiben Sie eine Java-Klasse OrderValidator, die diese Validierungen durchführt. Definieren Sie für jede
+Validierungsregel eine eigene Exception-Klasse: InvalidProductIDException, InvalidQuantityException, InvalidPriceException.
+Die Klasse OrderValidator soll eine Methode validateOrder haben, die
+die Bestelldaten (Produkt-ID, Bestellmenge, Einzelpreis) als Strings entgegennimmt und die Daten auf Gültigkeit überprüft.
+Bei einem Validierungsfehler soll die entsprechende Exception geworfen werden. Wenn alle Daten gültig sind, soll eine
+Erfolgsmeldung auf der Konsole ausgegeben werden.
+Spezifikationen:
+1. Erstellen Sie die folgenden benutzerdefinierten Exception-Klassen:
+○ InvalidProductIDException: Wird geworfen, wenn die Produkt-ID keine positive ganze Zahl ist.
+○ InvalidQuantityException: Wird geworfen, wenn die Bestellmenge keine positive ganze Zahl ist.
+○ InvalidPriceException: Wird geworfen, wenn der Einzelpreis kein positiver Dezimalwert ist.
+2. Implementieren Sie die OrderValidator-Klasse mit der Methode validateOrder, die die oben genannten Validierungen
+durchführt und bei Fehlern die entsprechenden Exceptions wirft.
+3. Erstellen Sie eine Main-Klasse, die die validateOrder-Methode verwendet und die von der Methode geworfenen Exceptions
+auffängt und eine passende Fehlermeldung auf der Konsole ausgibt. Verwenden Sie hierzu einen try-catch-Block.
+4. In der Main-Klasse sollen drei verschiedene Aufrufe von validateOrder stattfinden, um unterschiedliche Fehlerfälle zu
+simulieren und die entsprechenden Exceptions auszulösen.

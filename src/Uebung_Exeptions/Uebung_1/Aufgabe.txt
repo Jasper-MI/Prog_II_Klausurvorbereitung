@@ -1,0 +1,20 @@
+Aufgabe: Validierung von Benutzerdaten mit benutzerdefinierten Exceptions
+Sie entwickeln eine kleine Anwendung, die Benutzerdaten entgegennimmt und verarbeitet. Die Anwendung soll den Vornamen,
+den Nachnamen und das Alter eines Benutzers einlesen. Es gibt jedoch einige Validierungsregeln, die sicherstellen sollen,
+dass die eingegebenen Daten korrekt sind:
+● Vorname und Nachname: Dürfen nicht leer sein und dürfen nur alphabetische Zeichen (a-z, A-Z) enthalten.
+● Alter: Muss eine positive ganze Zahl sein.
+Schreiben Sie eine Java-Klasse UserDataValidator, die diese Validierungen durchführt. Definieren Sie für jede
+Validierungsregel eine eigene Exception-Klasse: EmptyNameException, InvalidNameFormatException, InvalidAgeException.
+Die Klasse UserDataValidator soll eine Methode validateUserData haben, die die Benutzerdaten (Vorname, Nachname, Alter)
+als Strings entgegennimmt und die Daten auf Gültigkeit überprüft. Bei einem Validierungsfehler soll die entsprechende
+Exception geworfen werden. Wenn alle Daten gültig sind, soll eine Erfolgsmeldung auf der Konsole ausgegeben werden.
+Spezifikationen:
+1. Erstellen Sie die folgenden benutzerdefinierten Exception-Klassen:
+○ EmptyNameException: Wird geworfen, wenn Vorname oder Nachname leer sind.
+○ InvalidNameFormatException: Wird geworfen, wenn Vorname oder Nachname ungültige Zeichen enthalten.
+○ InvalidAgeException: Wird geworfen, wenn das Alter keine positive ganze Zahl ist.
+2. Implementieren Sie die UserDataValidator Klasse mit der Methode validateUserData, die die oben genannten
+Validierungen durchführt und bei Fehlern die entsprechenden Exceptions wirft.
+3. Erstellen Sie eine Main-Klasse, die die validateUserData Methode verwendet und die von der Methode geworfenen
+Exceptions auffängt und eine passende Fehlermeldung auf der Konsole ausgibt. Verwenden Sie hierzu ein try-catch-Block.
