@@ -1,0 +1,19 @@
+Entwicklung eines Punkt-Klasse mit JUnit-Tests
+Gegeben sei eine Klasse Punkt (Punkt), die einen Punkt in einem zweidimensionalen Koordinatensystem repräsentiert.
+Die Klasse hat folgende Attribute:
+● x: x-Koordinate (Integer)
+● y: y-Koordinate (Integer)
+Die Klasse verfügt über einen Konstruktor, um die Koordinaten zu setzen, und Methoden,
+um die Koordinaten abzurufen (getX(), getY()) sowie eine Methode verschiebe(int dx, int dy), die den Punkt
+um die angegebenen Werte verschiebt.
+Deine Aufgabe ist es, eine JUnit-Testklasse zu erstellen, um die Funktionalität der Punkt-Klasse zu testen.
+Achte dabei besonders auf folgende Punkte:
+1. Erstelle eine Testklasse namens PunktTest.
+2. Teste den Konstruktor der Punkt-Klasse. Stelle sicher, dass die Koordinaten korrekt gesetzt werden.
+3. Teste die verschiebe()-Methode. Schreibe Tests, die die Verschiebung des Punktes in verschiedene Richtungen überprüfen.
+Verwende hierfür mindestens zwei verschiedene Testfälle.
+4. Verwende assertEquals() zur Überprüfung der erwarteten Ergebnisse.
+5. Verwende @BeforeEach um eine gemeinsame Ausgangsbasis für die Tests zu schaffen.
+6. Schreibe zudem Testfälle für Randfälle. Was passiert, wenn die Verschiebung negativ ist?
+7. Benutze das Arrange-Act-Assert-Muster für alle Tests.
+Code-Vorlage (Punkt.java):
