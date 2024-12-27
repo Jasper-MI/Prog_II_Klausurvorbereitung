@@ -1,0 +1,26 @@
+Ein Museum verwaltet verschiedene Arten von Ausstellungsstücken: Gemälde, Skulpturen und historische Artefakte.
+Jedes Ausstellungsstück hat einen Titel, ein Alter (in Jahren) und eine Beschreibung.
+Zusätzlich haben Gemälde eine Information über den Künstler, Skulpturen das Gewicht (in kg) und
+historische Artefakte eine Information über den Fundort.
+
+
+Das Museum möchte eine Funktion entwickeln, die es ermöglicht, alle Ausstellungsstücke eines bestimmten Typs zu filtern,
+basierend auf einem vom Benutzer angegebenen Prädikat. Außerdem sollen alle gefilterten Ausstellungsstücke in
+einer Liste nach ihrem Alter (absteigend) sortiert und ausgegeben werden.
+
+Gegeben:
+Die allgemeine Klasse für ein Ausstellungsstück sowie die Interfaces für spezifische Typen:
+
+Deine Aufgaben:
+1. Implementiere die drei konkreten Klassen GemaeldeImpl, SkulpturImpl und HistorischesArtefaktImpl,
+die die jeweiligen Interfaces implementieren.
+2. Schreiben Sie eine Methode, die die drei Listen der Ausstellungsstücke (Gemälde, Skulpturen und historische Artefakte)
+zusammenführt und die Objekte nach ihrem Alter aufsteigend sortiert.
+
+public static List<String> erstelleAntikMarkierungsliste(
+    List<Gemaelde> gemaeldeListe,
+    List<Skulptur> skulpturListe,
+    List<HistorischesArtefakt> artefaktListe);
+
+3. Erstelle eine Main-Klasse, in der du die Methode testest, indem du eine Liste mit gemischten Ausstellungsstücken
+erzeugst und filterst.

@@ -1,0 +1,25 @@
+Eine Bibliothek verwaltet ihre Bücher und Zeitschriften in einem System.
+Jedes Buch hat einen Titel, einen Autor und eine ISBN. Jede Zeitschrift hat einen Titel,
+eine ISSN und eine Erscheinungsfrequenz (z.B. monatlich, jährlich). Die Bibliothek möchte eine effiziente Methode,
+um folgende Operationen durchzuführen:
+1. Hinzufügen von Büchern und Zeitschriften zur Bibliothek.
+2. Suchen von Büchern und Zeitschriften anhand des Titels.
+3. Entfernen von Büchern und Zeitschriften aus der Bibliothek.
+4. Auflisten aller Bücher und Zeitschriften, wobei die Bücher alphabetisch nach Autor und die Zeitschriften alphabetisch
+nach Titel sortiert sein sollen.
+5. Die Bibliothek möchte außerdem Duplikate erkennen. Zwei Bücher sind gleich, wenn ihre ISBN übereinstimmen,
+und zwei Zeitschriften sind gleich, wenn ihre ISSN übereinstimmen.
+Um diese Operationen effizient zu gestalten, soll das Java Collections Framework verwendet werden, insbesondere HashMap
+für die Suche und HashSet für die Duplikaterkennung.
+Gegeben sind die folgenden Klassen:
+- Buch
+- Zeitschrift
+
+Deine Aufgabe ist es:
+1. Die Klassen Buch und Zeitschrift so zu erweitern, dass Duplikate erkannt werden können.
+2. Eine Klasse Bibliothek zu erstellen, die eine HashMap verwendet, um die Bücher und Zeitschriften zu speichern.
+Der Schlüssel soll der Titel der Publikation sein und der Wert das jeweilige Objekt (Buch oder Zeitschrift).
+3. Die Bibliothek-Klasse soll Methoden zum Hinzufügen, Suchen und Entfernen von Büchern und Zeitschriften haben.
+4. Die Bibliothek-Klasse soll eine Methode haben, die alle Bücher und Zeitschriften in der Bibliothek in einer Liste
+zurückgibt. Hierbei sollen erst die Bücher und dann die Zeitschriften aufgelistet werden.
+5. Eine Main-Klasse zu erstellen, die die Funktionen testet und die Listen ausgibt.

@@ -1,0 +1,22 @@
+Ein Online-Shop für Kunstwerke hat verschiedene Arten von Kunstwerken im Angebot:
+Gemälde, Skulpturen und Fotografien.
+Jedes Kunstwerk hat einen Titel, einen Künstler und einen Preis.
+Zusätzlich haben Gemälde eine Information über die Maltechnik (z.B. Öl, Aquarell),
+Skulpturen das Material (z.B. Bronze, Marmor) und Fotografien das Aufnahmejahr.
+Der Shop möchte eine Funktion entwickeln, die es ermöglicht, die Kunstwerke nach ihrem Typ zu
+gruppieren und innerhalb jedes Typs eine alphabetische Sortierung nach dem Titel zu erstellen.
+Um diese Gruppierung und Sortierung effizient zu gestalten, soll das Java Collections Framework verwendet
+werden.
+Gegeben ist die folgende Klasse für ein allgemeines Kunstwerk und Interfaces für die spezifischen
+Kunstwerke: Class Kustwerk
+
+Deine Aufgabe ist es:
+1. Drei konkrete Klassen für die drei Kunstwerkstypen zu erstellen,
+die die gegebenen Interfaces implementieren und die Attribute für den jeweiligen Typen haben.
+2. Eine Methode zu schreiben, die eine Liste von Kunstwerken entgegennimmt
+und diese in drei Listen nach Typen aufteilt. Hierbei ist es wichtig, mit Interfaces zu arbeiten,
+um den Code möglichst flexibel zu gestalten.
+3. Jede Liste soll alphabetisch nach dem Titel der Kunstwerke sortiert werden.
+Nutze die Möglichkeit der natural order der String Klasse.
+4. Eine Main-Klasse zu erstellen, die die Methode ausführt und die gruppierten
+und sortierten Listen ausgibt.
